@@ -6,16 +6,70 @@
     padding: 0;
     margin: 0;
     /* zeroing out everything to reset it */
-    background-color: #0E1319;
     }
 
 body{
     font-family: 'Noto Sans';
-    color:white;
-    
+    background-color: #0C1117;
+    color: white;
+}
+
+/* links */
+a{ 
+    text-decoration: none;
+    color: white;
 }
 
 
+h1{
+    font-family: 'Noto Sans';
+    font-weight: 500;
+}
+
+p {
+    margin: 10px,0;
+    /*  margins keep paragrpahs from being squsihed together.  */
+}
+
+/* nav bar */
+/* logo on nav bar */
+img{
+    margin: 10px 0;
+    width: 3%;
+    display: flex;
+}
+
+.navbar{
+    background-color: #020508;
+    color: white;
+    font-family: 'Noto Sans';
+    height: 104px;
+}
+
+.navbar ul{
+    display: flex;
+    /* this will make the ul line up in a row */
+    list-style-type: none;
+}
+
+.navbar a{
+    color: white;
+    padding: 5px;
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: #21262D;
+    border-radius: 10%;
+}
 
 
-/* .img-container{ overflow: hidden;}*/ 
+.container{
+    max-width: 100%;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}

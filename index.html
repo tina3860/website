@@ -9,51 +9,45 @@
     <title>Valentina Nguyen Portfolio</title>
 </head>
 <body> 
-  <div class ='nav'>
-    <div class="contaier">
-      <!-- <div class="img-container">  -->
-        <!-- <img src="Files/nav_logo_transparent.png" alt = 'nav-footer-logo'>    -->
-      <!-- </div> -->
+
+<!-- nav bar -->
+  <div class ="navbar">
+    <div class="contaier flex">
+        <div class="img-container"> 
+        <img className= "imges" src="V_logo-removebg-preview.png"/>   
+      </div> 
       <!-- https://stackoverflow.com/questions/72222182/transparent-background-of-the-images-are-too-big -->
-    <nav>
+      <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="resume.pdf">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li> 
+        <!-- change projects.html link to a link to part of the page in the portfolio section 
+        https://blog.hubspot.com/marketing/jump-link-same-page -->
+        <li><a href="Resume.pdf">Resume</a></li>
       </ul>
     </nav>
   </div>
 </div>
-<div class="landing">
-    <div class="column1">
-        <span class="Title">
-        Valentina Nguyen
-        </span>
-      <span class="subTitle">
-        Data Analyst
-      </span>
-    <span class="body">
-    <p id =intro1>Collect, process, analyze and present data - from supporting everyday business decisions to driving global change.</p>
-    <p id = intro2> My portfolio not only showcases my extensive professional background but also provides insight into my evolving skill set and unwavering dedication to driving results through the fusion of marketing and analytics. Explore my journey with me as I continue to navigate the dynamic intersection of data and marketing.</p>
-    </span>
-    <span class="buttons">
-    <a href="projects.html" id ='button1'>Projects</a>  
-    <a href="#contact" id="button2">Get in Touch</a> 
-    <!---  <a id="contact">Get in Touch</a>   
+
+<!-- landing left side -->
+<Section class="intro">
+  <div class="container grid">
+    <div class="intro-text">
+      <h1>Valentina Nguyen</h1>
+        <p>Collect, process, analyze and present data - from supporting everyday business decisions to driving global change. My portfolio not only showcases my extensive professional background but also provides insight into my evolving skill set and unwavering dedication to driving results through the fusion of marketing and analytics. Explore my journey with me as I continue to navigate the dynamic intersection of data and marketing.</p>
+     <!---  <a id="contact">Get in Touch</a>   
     https://www.semrush.com/blog/html-anchor/    -->
-    </span>
-</div> 
-<div class="column2">
-  <img src="Files/logo_transparent.png" alt="logo">
-</div>
-</div> <!--end page 1 landing-->
+      </div>
+  </div>
+
 <div class="about">
 <h1 id="aboutme">About Me</h1>
-<p id="p1">My name is Valentina Nguyen, and I am a recent graduate with a Bachelor's in Business Administration, specializing in Marketing. Having ventured into diverse industries, I've garnered a multifaceted perspective of the marketing landscape. However, it was during this journey that I discovered a profound fascination for analytics, prompting me to transition my career trajectory.
+<p>My name is Valentina Nguyen, and I am a recent graduate with a Bachelor's in Business Administration, specializing in Marketing. Having ventured into diverse industries, I've garnered a multifaceted perspective of the marketing landscape. However, it was during this journey that I discovered a profound fascination for analytics, prompting me to transition my career trajectory.
 </p>
-<p id="p2">
-Currently, I am embarking on a path of continuous learning, pursuing a Master's in Data Analysis to deepen my expertise in this domain. This academic pursuit aligns seamlessly with my evolving professional interests, as I now leverage my newfound knowledge of data and analytics to craft innovative and impactful marketing strategies.</p>
-<img src="Files/headshot-removebg-preview.png" alt="headshot">
+<p>
+Currently, I am embarking on a path of continuous learning, pursuing a Master's in Data Analysis to deepen my expertise in this domain. This academic pursuit aligns seamlessly with my evolving professional interests, as I now leverage my newfound knowledge of data and analytics to craft innovative and impactful marketing strategies.
+</p>
+<img src="" alt="headshot">
 </div><!--end page 2 about-->
 <div class="portfolio">
 <h1 id="portfolio">Portfolio</h1>
@@ -62,18 +56,31 @@ Currently, I am embarking on a path of continuous learning, pursuing a Master's 
     <a href ="Files/Valentina Nguyen Resume.docx.pdf" id="button3">View Resume</a>
 </span>
 </div><!--end page 3 porfolio-->
-<div class="getintouch">
-  <h3>Get in Touch</h3>
-<form action="getintouch">
-    <label for="fname">First Name:</label><br>
-    <input type="text" name="fname" id="fname"><br>
-    <label for="lname">Last Name:</label><br>
-    <input type="text" name="lname" id="lname"><br>
-    <textarea name="message" rows="10" cols="30">Write your message.</textarea>
-    <br><br>
-    <input type="submit" value="Submit">
-</form>
+</Section>
+
+
+<div class="showcase form card"> 
+  <!-- this will give you a "card" where it will give you a background color and rounded boarders and such -->
+  <h2>Get in Touch</h2>
+  <form>
+      <div class="form-control">
+          <input type="text" name="name" placeholder="Name" required> 
+          <!-- required: makes the input required before submission -->
+      </div>
+      <div class="form-control">
+          <input type="text" name="phone" placeholder="Phone Number" required> 
+          <!-- required: makes the input required before submission -->
+      </div>
+      <div class="form-control">
+          <input type="text" name="email" placeholder="Email" required> 
+          <!-- required: makes the input required before submission -->
+      </div>
+      <input type="submit" value="Send" class="btn.btn-primary">
+  </form>
 </div><!--end page 4 getintouch-->
+
+
+
 </body>
 <footer>
 <h3 id="contact">Contact</h3>
