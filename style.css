@@ -39,6 +39,13 @@ img{
     display: flex;
 }
 
+#img-logo {
+    margin: 10px 0;
+    width: 3%;
+    display: flex;
+}
+
+
 .navbar{
     background-color: #020508;
     color: white;
@@ -64,7 +71,16 @@ img{
     border-radius: 10%;
 }
 
+/* landing */
+#circular-portrait {
+    position: relative;
+    border-radius: 100%;
+    padding: 10px;
+    margin: 5px,5px;
+}
 
+
+/* utlities: classes to use all around the website */
 .container{
     max-width: 100%;
 }

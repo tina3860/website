@@ -14,16 +14,18 @@
   <div class ="navbar">
     <div class="contaier flex">
         <div class="img-container"> 
-        <img className= "imges" src="V_logo-removebg-preview.png"/>   
+        <img id= "img-logo" src="V_logo-removebg-preview.png"/>   
       </div> 
       <!-- https://stackoverflow.com/questions/72222182/transparent-background-of-the-images-are-too-big -->
       <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li> 
+        <li><a href="index.html" target="_blank" rel="noopener noreferrer">Home</a></li>
+        <li><a href="projects.html" target="_blank" rel="noopener noreferrer">Projects</a></li> 
         <!-- change projects.html link to a link to part of the page in the portfolio section 
         https://blog.hubspot.com/marketing/jump-link-same-page -->
-        <li><a href="Resume.pdf">Resume</a></li>
+        <li><a href="Resume.pdf" target="_blank" rel="noopener noreferrer" >Resume</a></li>
+        <!-- target: specifies where the linked resource will be opened. To open the link in a new tab or window (depends on browser settings) you can set it to _blank. -->
+        <!-- The prevention of access that is caused by noopener prevents phishing attacks where the opened link may change the original webpage to a different one to trick users. This is referred to as tabnabbing. it is recommended to always pair a target="_blank" with a rel="noopener noreferrer". -->
       </ul>
     </nav>
   </div>
@@ -31,6 +33,10 @@
 
 <!-- landing left side -->
 <Section class="intro">
+  <div class="headshot-container">
+    <img id="circular-portrait" src="Headshot.JPG" alt="headshot" width="25%" height="50%" style="width: 20%; height: 275px; object-fit: cover; object-position: 0% 0%;"> 
+    <!-- object fit: cover: to have the img cover the entire container area. Object-position: place the coordinates to have what will show in the container area. -->
+  </div>
   <div class="container grid">
     <div class="intro-text">
       <h1>Valentina Nguyen</h1>
@@ -47,7 +53,6 @@
 <p>
 Currently, I am embarking on a path of continuous learning, pursuing a Master's in Data Analysis to deepen my expertise in this domain. This academic pursuit aligns seamlessly with my evolving professional interests, as I now leverage my newfound knowledge of data and analytics to craft innovative and impactful marketing strategies.
 </p>
-<img src="" alt="headshot">
 </div><!--end page 2 about-->
 <div class="portfolio">
 <h1 id="portfolio">Portfolio</h1>
