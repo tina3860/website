@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap");
+
 * {
   box-sizing: border-box;
   /* allows you to add padding and borders without having to add to the width of the element  */
@@ -38,10 +39,13 @@ img {
   display: flex;
 }
 
-#img-logo {
-  margin: 10px 0;
-  width: 3%;
+img-logo {
   display: flex;
+  margin: 10px 0;
+  width: 5%;
+  position: absolute;
+  height: auto;
+  left: 5px;
 }
 
 /* navigation bar block */
@@ -50,6 +54,10 @@ img {
   color: white;
   font-family: "Noto Sans";
   height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0 20px;
 }
 
 .navbar ul {
@@ -72,6 +80,10 @@ img {
   border-bottom: 2px white solid;
 }
 
+.navbar .flex {
+  justify-content: space-between;
+}
+
 /* landing */
 #circular-portrait {
   position: relative;
@@ -83,9 +95,11 @@ img {
 /* utlities: classes to use all around the website */
 .container {
   max-width: 100%;
+  overflow: auto;
 }
 
 .flex {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: end;
 }
