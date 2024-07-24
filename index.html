@@ -17,23 +17,36 @@
   <title>Valentina Nguyen Portfolio</title>
 </head>
 
-<body>
 
+<body>
   <!-- nav bar -->
   <div class="navbar">
     <div class="contaier flex">
-      <div class="img-container">
-        <img id="img-logo" src="V_logo-removebg-preview.png" />
-      </div>
+      <a href="#" id="logo">
+        <img src="V_logo-removebg-preview.png" alt="logo" class="logo__img">
+      </a>
+
       <!-- https://stackoverflow.com/questions/72222182/transparent-background-of-the-images-are-too-big -->
-      <nav>
-        <ul>
-          <li><a href="index.html" target="_blank" rel="noopener noreferrer">Home</a></li>
-          <li><a href="certficates.html" target="_blank" rel="noopener noreferrer">Certificates</a></li>
-          <li><a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
-          <li><a href="portfolio.html" target="_blank" rel="noopener noreferrer">Portfolio</a></li>
-          <li><a href="blog.html" target="_blank" rel="noopener noreferrer">Blog</a></li>
-          <li><a href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a></li>
+      <nav class="navigation">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" target="_blank" rel="noopener noreferrer" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="certficates.html" target="_blank" rel="noopener noreferrer" class="nav__link">Certificates</a>
+          </li>
+          <li class="nav__item">
+            <a href="Resume.pdf" target="_blank" rel="noopener noreferrer" class="nav__link">Resume</a>
+          </li>
+          <li class="nav__item">
+            <a href="portfolio.html" target="_blank" rel="noopener noreferrer" class="nav__link">Portfolio</a>
+          </li>
+          <li class="nav__item">
+            <a href="blog.html" target="_blank" rel="noopener noreferrer" class="nav__link">Blog</a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" target="_blank" rel="noopener noreferrer" class="nav__link">Contact</a>
+          </li>
         </ul>
         <!-- target: specifies where the linked resource will be opened. To open the link in a new tab or window (depends on browser settings) you can set it to _blank. -->
         <!-- The prevention of access that is caused by noopener prevents phishing attacks where the opened link may change the original webpage to a different one to trick users. This is referred to as tabnabbing. it is recommended to always pair a target="_blank" with a rel="noopener noreferrer". -->
@@ -109,20 +122,20 @@
 <footer>
   <h3 id="contact">Contact</h3>
   <p><a href="mailto:valentinajnguyen@icloud.com">Email</a></p>
-  <i class="fa-regular fa-envelope"></i>
+  <i class="fa-regular fa-envelope icon"></i>
   <p><a href="tel:+4233708388">Phone Number</a></p>
-  <i class="fa-solid fa-phone"></i>
+  <i class="fa-solid fa-phone icon"></i>
   <h3>Social Media</h3>
   <a href="https://www.linkedin.com/in/valentina-nguyen-22667b181/">Linkedin</a>
-  <i class="fa-brands fa-linkedin"></i>
+  <i class="fa-brands fa-linkedin icon"></i>
   <a href="https://github.com/tina3860"></a>
-  <i class="fa-brands fa-github"></i>
+  <i class="fa-brands fa-github icon"></i>
   <a href="https://public.tableau.com/app/profile/valentina.nguyen3347/vizzes"></a>
-  <!-- https://www.dataplusscience.com/FontAwesomeIcons.html tableau icon -->
+  <!-- https://www.dataplusscience.com/FontAwesomeIcons.html tableau icon  <i class="fa-solid fa-plus icon"></i>.  -->
   <!-- Copy right?-->
-  <div class="img-container">
-    <img id="img-logo" src="V_logo-removebg-preview.png" />
-  </div>
+  <a href="#" class="logo">
+    <img src="V_logo-removebg-preview.png" alt="logo" class="logo__img">
+  </a>
 </footer>
 
 </html>

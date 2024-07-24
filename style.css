@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap");
-
+/* RESET */
 * {
   box-sizing: border-box;
   /* allows you to add padding and borders without having to add to the width of the element  */
@@ -9,20 +9,21 @@
   /* zeroing out everything to reset it */
 }
 
-body {
-  font-family: "Noto Sans";
-  background-color: #0c1117;
-  color: white;
-}
-
 /* links */
 a {
   text-decoration: none;
   color: white;
 }
 
+body {
+  background-color: #0c1117;
+  color: white;
+  font-family: "Inter", sans-serif;
+  height: 5000px;
+}
+
 h1 {
-  font-family: "Noto Sans";
+  font-family: "Inter", sans-serif;
   font-weight: 500;
 }
 
@@ -48,11 +49,13 @@ img-logo {
   left: 5px;
 }
 
+/* .icon {} */
+
 /* navigation bar block */
 .navbar {
   background-color: #020508;
   color: white;
-  font-family: "Noto Sans";
+  font-family: "Inter", sans-serif;
   height: 104px;
   display: flex;
   align-items: center;
