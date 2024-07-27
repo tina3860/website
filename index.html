@@ -5,134 +5,77 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- css link -->
   <link rel="stylesheet" href="style.css">
+  <!-- javascript link -->
   <script defer src="script.js"></script>
+  <!-- google font, Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- title page -->
   <title>Valentina Nguyen Portfolio</title>
 </head>
 
-
 <body>
-  <!-- nav bar -->
-  <div class="navbar">
-    <div class="contaier flex">
-      <a href="#" id="logo">
-        <img src="V_logo-removebg-preview.png" alt="logo" class="logo__img">
-      </a>
+  <!-- header navigation bar -->
+  <header class="header">
+    <div class="nav">
+      <div class="nav__content">
+        <a href="#" class="logo">
+          <img src="V_logo-removebg-preview.png" alt="logo" class="logo__img">
+        </a>
 
-      <!-- https://stackoverflow.com/questions/72222182/transparent-background-of-the-images-are-too-big -->
-      <nav class="navigation">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="index.html" target="_blank" rel="noopener noreferrer" class="nav__link">Home</a>
-          </li>
-          <li class="nav__item">
-            <a href="certficates.html" target="_blank" rel="noopener noreferrer" class="nav__link">Certificates</a>
-          </li>
-          <li class="nav__item">
-            <a href="Resume.pdf" target="_blank" rel="noopener noreferrer" class="nav__link">Resume</a>
-          </li>
-          <li class="nav__item">
-            <a href="portfolio.html" target="_blank" rel="noopener noreferrer" class="nav__link">Portfolio</a>
-          </li>
-          <li class="nav__item">
-            <a href="blog.html" target="_blank" rel="noopener noreferrer" class="nav__link">Blog</a>
-          </li>
-          <li class="nav__item">
-            <a href="contact.html" target="_blank" rel="noopener noreferrer" class="nav__link">Contact</a>
-          </li>
-        </ul>
-        <!-- target: specifies where the linked resource will be opened. To open the link in a new tab or window (depends on browser settings) you can set it to _blank. -->
-        <!-- The prevention of access that is caused by noopener prevents phishing attacks where the opened link may change the original webpage to a different one to trick users. This is referred to as tabnabbing. it is recommended to always pair a target="_blank" with a rel="noopener noreferrer". -->
-      </nav>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" target="_blank" rel="noopener noreferrer" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="certficates.html" target="_blank" rel="noopener noreferrer" class="nav__link">Certificates</a>
+            </li>
+            <li class="nav__item">
+              <a href="Resume.pdf" target="_blank" rel="noopener noreferrer" class="nav__link">Resume</a>
+            </li>
+            <li class="nav__item">
+              <a href="portfolio.html" target="_blank" rel="noopener noreferrer" class="nav__link">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a href="blog.html" target="_blank" rel="noopener noreferrer" class="nav__link">Blog</a>
+            </li>
+            <li class="nav__item">
+              <a href="contact.html" target="_blank" rel="noopener noreferrer" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- TODO: hamburger menu -->
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+
+        </div>
+      </div>
+
     </div>
-  </div>
-
-  <!-- landing left side -->
-  <Section class="intro">
-    <div class="headshot-container">
-      <img id="circular-portrait" src="Headshot.JPG" alt="headshot" width="25%" height="50%"
-        style="width: 20%; height: 275px; object-fit: cover; object-position: 0% 0%;">
-      <!-- object fit: cover: to have the img cover the entire container area. Object-position: place the coordinates to have what will show in the container area. -->
-    </div>
-    <div class="container grid">
-      <div class="intro-text">
-        <h1>Valentina Nguyen</h1>
-        <p>Collect, process, analyze and present data - from supporting everyday business decisions to driving global
-          change. My portfolio not only showcases my extensive professional background but also provides insight into my
-          evolving skill set and unwavering dedication to driving results through the fusion of marketing and analytics.
-          Explore my journey with me as I continue to navigate the dynamic intersection of data and marketing.</p>
-        <!---  <a id="contact">Get in Touch</a>   
-    https://www.semrush.com/blog/html-anchor/    -->
-      </div>
-    </div>
-
-    <div class="about">
-      <h1 id="aboutme">About Me</h1>
-      <p>My name is Valentina Nguyen, and I am a recent graduate with a Bachelor's in Business Administration,
-        specializing in Marketing. Having ventured into diverse industries, I've garnered a multifaceted perspective of
-        the marketing landscape. However, it was during this journey that I discovered a profound fascination for
-        analytics, prompting me to transition my career trajectory.
-      </p>
-      <p>
-        Currently, I am embarking on a path of continuous learning, pursuing a Master's in Data Analysis to deepen my
-        expertise in this domain. This academic pursuit aligns seamlessly with my evolving professional interests, as I
-        now leverage my newfound knowledge of data and analytics to craft innovative and impactful marketing strategies.
-      </p>
-    </div><!--end page 2 about-->
-    <div class="portfolio">
-      <h1 id="portfolio">Portfolio</h1>
-      <h2>A Sample of My Work</h2>
-      <span class="buttons">
-        <a href="Files/Valentina Nguyen Resume.docx.pdf" id="button3">View Resume</a>
-      </span>
-    </div><!--end page 3 porfolio-->
-  </Section>
-
-
-  <div class="showcase form card">
-    <!-- this will give you a "card" where it will give you a background color and rounded boarders and such -->
-    <h2>Get in Touch</h2>
-    <form>
-      <div class="form-control">
-        <input type="text" name="name" placeholder="Name" required>
-        <!-- required: makes the input required before submission -->
-      </div>
-      <div class="form-control">
-        <input type="text" name="phone" placeholder="Phone Number" required>
-        <!-- required: makes the input required before submission -->
-      </div>
-      <div class="form-control">
-        <input type="text" name="email" placeholder="Email" required>
-        <!-- required: makes the input required before submission -->
-      </div>
-      <input type="submit" value="Send" class="btn.btn-primary">
-    </form>
-  </div><!--end page 4 getintouch-->
-
-
-
+  </header>
 </body>
+
 <footer>
-  <h3 id="contact">Contact</h3>
-  <p><a href="mailto:valentinajnguyen@icloud.com">Email</a></p>
-  <i class="fa-regular fa-envelope icon"></i>
-  <p><a href="tel:+4233708388">Phone Number</a></p>
-  <i class="fa-solid fa-phone icon"></i>
-  <h3>Social Media</h3>
-  <a href="https://www.linkedin.com/in/valentina-nguyen-22667b181/">Linkedin</a>
-  <i class="fa-brands fa-linkedin icon"></i>
-  <a href="https://github.com/tina3860"></a>
-  <i class="fa-brands fa-github icon"></i>
-  <a href="https://public.tableau.com/app/profile/valentina.nguyen3347/vizzes"></a>
-  <!-- https://www.dataplusscience.com/FontAwesomeIcons.html tableau icon  <i class="fa-solid fa-plus icon"></i>.  -->
-  <!-- Copy right?-->
+  <section class="email">
+    <i class="fa-regular fa-envelope icon"></i>
+    valentinajnguyen@icloud.com
+  </section>
+  <section class="phone">
+    <i class="fa-solid fa-phone icon"></i>
+    (423) 370-8388
+  </section>
   <a href="#" class="logo">
     <img src="V_logo-removebg-preview.png" alt="logo" class="logo__img">
   </a>

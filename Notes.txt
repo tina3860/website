@@ -1,0 +1,64 @@
+
+NOTES
+
+Can highlight things that need to be done or fixed in code comments by using TODO: and FIXME:.
+Can highlight in notes by using cmd + H to remove  ^ + H.
+
+
+* {
+  box-sizing: border-box;
+  /* allows you to add padding and borders without having to add to the width of the element  */
+  padding: 0;
+  margin: 0;
+  /* zeroing out everything to reset it */
+}
+
+The asterisk (*) is the universal selector. It matches all elements in the document.
+
+The box-sizing property in CSS determines how the width and height of an element are calculated. There are two main values for box-sizing: content-box and border-box.
+
+- Default Behavior (content-box):
+    - By default, the box-sizing property is set to content-box. This means:
+    - Width and height are calculated only for the content of the element.
+    - Any padding and border are added outside of the specified width and height.
+    - Example: <div style="width: 200px; height: 200px; padding: 20px; border: 10px solid;">Content</div>
+        - content-box calculates the width and height as 200px each. The total width becomes 200px (content) + 20px (left padding) + 20px (right padding) + 10px (left border) + 10px (right border) = 260px. The total height becomes 200px (content) + 20px (top padding) + 20px (bottom padding) + 10px (top border) + 10px (bottom border) = 260px.
+
+- Border-Box Behavior
+    - When box-sizing is set to border-box: Width and height include the content, padding, and border. The size of the content area is reduced to accommodate the padding and border within the specified width and height.
+    - Example: <div style="box-sizing: border-box; width: 200px; height: 200px; padding: 20px; border: 10px solid;">Content</div>
+        - border-box calculates the total width and height as 200px each.The content area is adjusted: Content width = 200px - 20px (left padding) - 20px (right padding) - 10px (left border) - 10px (right border) = 140px. The content area height = 200px - 20px (top padding) - 20px (bottom padding) - 10px (top border) - 10px (bottom border) = 140px
+
+    - Benefits of border-box:
+        - Consistent Layout: It makes it easier to set a consistent size for elements without having to account for padding and borders manually.
+        - Responsive Design: Simplifies responsive design as the total element size remains consistent.
+        - Easier Calculations: You don't have to subtract padding and borders from the width and height, which simplifies layout calculations.
+
+Reset settings to offset the automatic format from default designs by setting padding and margins to 0.
+
+
+Display:Flex
+will align items in a row by default. When you apply display: flex to a container, its direct children (flex items) are aligned along the main axis. By default, the main axis runs horizontally, so the flex items will be aligned in a row.
+
+
+align-items: center;
+  justify-content: space-between;
+
+The CSS properties align-items: center; and justify-content: space-between; are used in combination with display: flex; to control the alignment and distribution of flex items within a container. Here's what each property does:
+
+align-items: center;
+Purpose: Vertically aligns the items in the center of the flex container's cross axis.
+Usage: When used with display: flex;, it centers the flex items along the cross axis (vertically if the flex direction is row, and horizontally if the flex direction is column).
+
+justify-content: space-between;
+Purpose: Horizontally distributes the space between items, leaving the first item at the start of the container and the last item at the end.
+Usage: When used with display: flex;, it places the items evenly distributed across the main axis (horizontally if the flex direction is row, and vertically if the flex direction is column), with the first item aligned at the start and the last item aligned at the end of the flex container.
+
+
+flex-direction: column
+Purpose: Sets the direction of the flex container's main axis to be vertical, so the flex items are stacked from top to bottom.
+Usage: Changes the direction of the flex items from horizontal (default) to vertical.
+
+
+
+

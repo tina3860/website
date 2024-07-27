@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap");
 /* RESET */
+
 * {
   box-sizing: border-box;
   /* allows you to add padding and borders without having to add to the width of the element  */
@@ -9,12 +8,16 @@
   /* zeroing out everything to reset it */
 }
 
-/* links */
 a {
   text-decoration: none;
   color: white;
 }
 
+ul {
+  list-style: none;
+}
+
+/* base style */
 body {
   background-color: #0c1117;
   color: white;
@@ -22,87 +25,88 @@ body {
   height: 5000px;
 }
 
-h1 {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
+/* normal style */
+.header {
 }
 
-p {
-  margin: 10px, 0;
-  /*  margins keep paragrpahs from being squsihed together.  */
+.icon {
 }
 
-/* nav bar */
-/* logo on nav bar */
-img {
-  margin: 10px 0;
-  width: 3%;
-  display: flex;
-}
-
-img-logo {
-  display: flex;
-  margin: 10px 0;
-  width: 5%;
-  position: absolute;
-  height: auto;
-  left: 5px;
-}
-
-/* .icon {} */
-
-/* navigation bar block */
-.navbar {
-  background-color: #020508;
-  color: white;
-  font-family: "Inter", sans-serif;
-  height: 104px;
+.logo {
   display: flex;
   align-items: center;
-  justify-content: end;
-  padding: 0 20px;
+  padding: 0, 30px;
 }
 
-.navbar ul {
+.logo__img {
+  height: 45px;
+  padding: 0, 30px;
+}
+
+.nav {
+  background-color: #020508;
+}
+
+.nav__content {
+  height: 90px;
+  max-width: 1350px;
+  margin: 0 30px;
+  /* will put space between edge of viewport and item, it will lead to a better responsive website. */
   display: flex;
-  /* this will make the ul line up in a row */
-  list-style-type: none;
-  /* gets rid of bullet points */
-}
-
-/* Color */
-.navbar a {
-  color: white;
-  padding: 5px;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-/* makes a white underline under each link when you hover over it */
-.navbar a:hover {
-  border-bottom: 2px white solid;
-}
-
-.navbar .flex {
+  align-items: center;
   justify-content: space-between;
+  padding: 0, 30px;
 }
 
-/* landing */
-#circular-portrait {
-  position: relative;
-  border-radius: 100%;
-  padding: 10px;
-  margin: 5px, 5px;
-}
-
-/* utlities: classes to use all around the website */
-.container {
-  max-width: 100%;
-  overflow: auto;
-}
-
-.flex {
+.nav__list {
   display: flex;
-  justify-content: center;
-  align-items: end;
+  column-gap: 40px;
+}
+
+.nav__item {
+}
+
+.nav__link {
+  color: rgb(255, 255, 255);
+  transition: all, 0.2s;
+}
+
+.nav__link:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+}
+
+footer {
+  display: none;
+}
+/* TODO: when you are ready to edit the footer, remove displaY: none, this is to hide it rn */
+
+/* MEDIA QUERIES: used for mobile*/
+/* changes the position of the nav bar for mobile*/
+@media (max-width: 650px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #020508;
+    width: 100%;
+    padding: 10 0 25px;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+
+  .nav__link {
+    font-size: 14px;
+    padding: 7px 17px;
+  }
 }
