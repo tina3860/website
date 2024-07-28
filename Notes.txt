@@ -1,8 +1,11 @@
 
 NOTES
 
+CSS
+
 Can highlight things that need to be done or fixed in code comments by using TODO: and FIXME:.
 Can highlight in notes by using cmd + H to remove  ^ + H.
+ctr + / will toggle comments in code 
 
 
 * {
@@ -60,5 +63,28 @@ Purpose: Sets the direction of the flex container's main axis to be vertical, so
 Usage: Changes the direction of the flex items from horizontal (default) to vertical.
 
 
+transform: translateX(-100%);
+animation: this will be moved out of the view port to the left then we animate with js by assigning a click movement to transform it back to 0% and it will be centered and visible again
+
+
+!important
+The !important declaration in CSS is used to give a CSS rule the highest priority, overriding any other styles applied to the same element, including those defined in inline styles or other CSS rules. It's a way to ensure that a particular style is applied no matter what other conflicting styles might exist.
+
+
+
+
+
+
+JAVA SCRIPT
+
+const hambugerEL = document.querySelector('.hamburger');
+document.querySelector(): This method returns the first element within the document that matches the specified selector. In this case, the selector is .hamburger, which means it will select the first element with the class hamburger.
+const: This keyword is used to declare a constant variable. A constant variable cannot be reassigned after its initial assignment, but its content (if it's an object or array) can still be modified.
+Assigning the element: The element selected by document.querySelector('.hamburger') is assigned to the constant hamburgerEL (like a variable)
+
+
+navEL.classList.add("nav--open");
+navEL is assumed to be a reference to another HTML element (probably a <nav> element or a similar container).
+navEL.classList.add("nav--open") adds the class nav--open to the element referenced by navEL.
 
 

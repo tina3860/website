@@ -80,12 +80,21 @@ body {
 }
 
 .bar {
+  height: 2px;
+  background-color: white;
+  width: 27px;
+  margin: 5px 0;
 }
 
 footer {
   display: none;
 }
 /* TODO: when you are ready to edit the footer, remove displaY: none, this is to hide it rn */
+
+/* FOR JavaScript (JS) */
+.nav--open {
+  transform: translateX(0%) !important;
+}
 
 /* MEDIA QUERIES: used for mobile*/
 /* changes the position of the nav bar for mobile*/
@@ -97,6 +106,8 @@ footer {
     background-color: #020508;
     width: 100%;
     padding: 10 0 25px;
+    /* animation */
+    transform: translateX(-100%);
   }
 
   .nav__list {
@@ -108,5 +119,9 @@ footer {
   .nav__link {
     font-size: 14px;
     padding: 7px 17px;
+  }
+
+  .hamburger {
+    display: block;
   }
 }
